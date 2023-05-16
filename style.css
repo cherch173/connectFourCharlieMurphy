@@ -22,7 +22,7 @@ header {
     text-align: center;
     color: cadetblue;
     text-shadow:darksalmon -2px 2px, whitesmoke -3px 3px;
-    margin: 173px 0 auto;
+    margin-top: 100px;
 }
 
 h1 {
@@ -30,22 +30,22 @@ h1 {
     text-shadow:whitesmoke -1px 1px, rebeccapurple -2px 2px, black -3px 3px;
     font-size: 6vmin;
     letter-spacing: .42vmin;
-    margin: 0 5 auto;
+    margin-top: -20px;
     text-align: center;
+    margin-bottom: -10px;
 }
 
 #markers {
     display: grid;
     grid-template-columns: repeat(7, 10vmin);
     gap: 1vmin;
-    margin-top: 1.5vmin;
 }
 
 #markers > div {
     height: 10vmin;
     border-width: 5vmin;
     border-style: dotted;
-    border-color:darksalmon transparent transparent;
+    border-color: rgba(230, 230, 250, 0.73) transparent transparent;
     transform: scale(0.7);
 }
 
@@ -65,7 +65,7 @@ h1 {
 
 #board > div {
     border-radius: 50%;
-    border: 0.7vmin double cadetblue;
+    border: 6px double rgba(245, 245, 245, 0.73);
     
 }
 
