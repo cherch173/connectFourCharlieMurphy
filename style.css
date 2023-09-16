@@ -4,7 +4,7 @@
 
 body {
     height: 100vh;
-    margin: 2vmin;
+    margin: 2vmin 0;
     font-family: 'Splash', cursive;
     display: flex;
     flex-direction: column;
@@ -17,28 +17,31 @@ body {
 
 header {
     font-size: 5vmin;
+    font-weight: bold;
     text-align: center;
-    color: cadetblue;
-    text-shadow:darksalmon -.5px .5px, whitesmoke -1px 1px;
-    margin-top: 4vmin;
+    color: rebeccapurple;
+    text-shadow:lavenderblush -.25px .25px, whitesmoke -.5px .5px;
+    /* margin-top: 4vmin; */
 }
 
 h1 {
     color:rgb(160, 133, 214, 0.86);
-    text-shadow:whitesmoke -.5px .5px, rebeccapurple -.75px .75px, black -1px 1px;
+    text-shadow:black -.25px .25px, whitesmoke -.5px .5px, black .75px .75px;
     font-size: 3vmin;
     text-align: center;
 }
 
 #markers {
     display: grid;
-    grid-template-columns: repeat(7, 10vmin);
+    grid-template-columns: repeat(7, 8vmin);
+    align-items: center;
+    justify-content: center;
     gap: 1vmin;
 }
 
 #markers > div {
-    height: 10vmin;
-    border-width: 5vmin;
+    height: 6vmin;
+    border-width: 4vmin;
     border-style: dotted;
     border-color: rgba(230, 230, 250, 0.73) transparent transparent;
     transform: scale(0.7);
@@ -46,16 +49,16 @@ h1 {
 
 #markers > div:hover {
     transform: scale(0.8);
-    transition: transform 173ms ease-in;
-    border-top-color: lightsalmon;
+    transition: transform 142ms ease-in;
+    border-top-color: lavenderblush;
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(7, 10vmin);
-    grid-template-rows: repeat(6, 10vmin);
+    grid-template-columns: repeat(7, 8vmin);
+    grid-template-rows: repeat(6, 8vmin);
     gap: 1vmin;
-    margin-top: -3vmin;
+    margin-top: -2vmin;
 }
 
 #board > div {
@@ -67,10 +70,20 @@ h1 {
 button {
     margin-top: 2vmin;
     margin-bottom: 2vmin;
-    padding: 2vmin;
-    font-size: 2vmin;
-    border-radius: 4vmin;
-    border: 3px lightsalmon double;
-    background-color: cadetblue;
-    color: whitesmoke;
+    padding: 1vmin;
+    font-size: 1.5vmin;
+    border-radius: 8px;
+    border: .25vmin solid lavenderblush;
+    background-color: rebeccapurple;
+    color: lavenderblush;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(105%);
+    transition: ease-in 142ms;
+    background-color: lavenderblush;
+    color: rebeccapurple;
+    border: .25vmin solid rebeccapurple;
+
 }
