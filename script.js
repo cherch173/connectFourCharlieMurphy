@@ -194,15 +194,15 @@ const COLORS = {
   function renderMessage() {
   /// IT'S A TIE message
     if (winner === 'T') {
-      messageEl.innerHTML = `It's a <span style="color: cadetblue">draw.</span> <br><span style="font-size: 4vmin"><span style="color: cadetblue">Purify yourself </span>in the waters of <span style="color: cadetblue"> Lake Minnetonka.</span></span></br>`;
+      messageEl.innerHTML = `It's a <span style="color: cadetblue">draw.</span> <br><span style="font-size: 3vmin"><span style="color: cadetblue">Purify yourself </span>in the waters of <span style="color: cadetblue"> Lake Minnetonka.</span></span></br>`;
     } 
   /// PLAYER 2 WINS message
     else if (winner <= '-1') {
-      messageEl.innerHTML = `...game, <span style="font-size: 6.66vmin">Blouses. <span style="color: ${COLORS[winner]}">  Prince </span></span> wins.`;
+      messageEl.innerHTML = `...game, <span style="font-size: 4vmin">Blouses. <span style="color: ${COLORS[winner]}">  Prince </span></span> wins.`;
     } 
   /// PLAYER 1 WINS message
       else if (winner >= '1') {
-      messageEl.innerHTML = `Congratulations, <span style="color: ${COLORS[winner]}">  Charlie Murphy. </span> You win. <br>...<span style="font-size: 4.5vmin"><span style="color: ${COLORS[winner]}">pancakes </span>will be served momentarily.</span></br>`;
+      messageEl.innerHTML = `Congratulations, <span style="color: ${COLORS[winner]}">  Charlie Murphy. </span> You win. <br>...<span style="font-size: 3vmin"><span style="color: ${COLORS[winner]}">pancakes </span>will be served momentarily.</span></br>`;
     }
   /// ASSIGN NAME to PLAYER ONE in it's TURN via its COLORS const
       else if (turn >= '1') {

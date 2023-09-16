@@ -3,36 +3,31 @@
 }
 
 body {
-    /*   viewport units: vh (viewport height)  vw (viewport width)  vmin (smallest between a vh and a vw whatever those values are)  */
     height: 100vh;
-    margin: 0;
+    margin: 2vmin;
     font-family: 'Splash', cursive;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://thumbs.gfycat.com/PowerlessUncomfortableComet.webp');
-    background-color: bisque;
+    background-image: url('https://i.pinimg.com/originals/79/c3/9d/79c39d7353d85e578e7631a7b4e1fbd3.gif');
+    background-color: rgb(42, 42, 42);
     background-size: cover;
 }
 
 header {
-    font-size: 9vmin;
-    letter-spacing: .42vmin;
+    font-size: 5vmin;
     text-align: center;
     color: cadetblue;
-    text-shadow:darksalmon -2px 2px, whitesmoke -3px 3px;
-    margin-top: 100px;
+    text-shadow:darksalmon -.5px .5px, whitesmoke -1px 1px;
+    margin-top: 4vmin;
 }
 
 h1 {
     color:rgb(160, 133, 214, 0.86);
-    text-shadow:whitesmoke -1px 1px, rebeccapurple -2px 2px, black -3px 3px;
-    font-size: 6vmin;
-    letter-spacing: .42vmin;
-    margin-top: -20px;
+    text-shadow:whitesmoke -.5px .5px, rebeccapurple -.75px .75px, black -1px 1px;
+    font-size: 3vmin;
     text-align: center;
-    margin-bottom: -10px;
 }
 
 #markers {
@@ -50,7 +45,7 @@ h1 {
 }
 
 #markers > div:hover {
-    transform: scale(0.96);
+    transform: scale(0.8);
     transition: transform 173ms ease-in;
     border-top-color: lightsalmon;
 }
@@ -70,8 +65,8 @@ h1 {
 }
 
 button {
-    margin-top: 4vmin;
-    margin-bottom: 4vmin;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
     padding: 2vmin;
     font-size: 2vmin;
     border-radius: 4vmin;
