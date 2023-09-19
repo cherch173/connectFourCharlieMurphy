@@ -10,8 +10,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://i.pinimg.com/originals/79/c3/9d/79c39d7353d85e578e7631a7b4e1fbd3.gif');
+    background-image: url('https://media.tenor.com/Zg-o5ok0eMoAAAAd/pancakes-prince.gif');
     background-color: rgb(42, 42, 42);
+    background-position: center;
     background-size: cover;
 }
 
@@ -95,19 +96,63 @@ button:hover {
 
 @media (max-width: 480px) {
     * {
-        background-size: cover;
+        height: 100%;
     }
 
     body {
         height: 100vh;
+        padding: .5vmin;
+        margin: 0 auto;
+        background-size: cover;
     }
 
     header {
         font-size: 12vmin;
+        margin: 2vmin;
     }
 
     h1 {
         font-size: 10vmin;
+        margin-top: -20vmin;
+    }
+
+    #markers {
+        display: grid;
+        grid-template-columns: repeat(7, 12vmin);
+        align-items: center;
+        justify-content: center;
+        gap: 1vmin;
+        margin-top: -35vmin;
+    }
+    
+    #markers>div {
+        height: 8vmin;
+        border-width: 6vmin;
+        border-style: dotted;
+        border-color: rgba(230, 230, 250, 0.73) transparent transparent;
+        transform: scale(0.7);
+        filter: will-change;
+    }
+    
+    #markers>div:hover {
+        transform: scale(0.8);
+        transition: transform 142ms ease-in;
+        border-top-color: lavenderblush;
+        filter: drop-shadow(0 0 2vmin lavenderblush);
+        cursor: pointer;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(7, 12vmin);
+        grid-template-rows: repeat(6, 12vmin);
+        gap: 1vmin;
+        margin-top: -15vmin;
+    }
+    
+    #board>div {
+        border-radius: 50%;
+        border: 6px double rgba(245, 245, 245, 0.73);
     }
 
 }
