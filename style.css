@@ -92,3 +92,18 @@ button:hover {
     border: .25vmin solid rebeccapurple;
     filter: drop-shadow(0 0 2vmin lavenderblush);
 }
+
+@media (max-width: 480px) {
+    * {
+        background-size: cover;
+    }
+
+    header {
+        font-size: 12vmin;
+    }
+
+    h1 {
+        font-size: 10vmin;
+    }
+
+}
