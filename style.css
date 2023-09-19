@@ -158,7 +158,8 @@ button:hover {
     button {
         font-size: 4vmin;
         height: fit-content;
-        margin-top: 8vmin;
+        /* width: fit-content; */
+        margin-top: 2vmin;
         padding: 2vmin;
     }
 
