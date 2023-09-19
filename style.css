@@ -102,18 +102,19 @@ button:hover {
         background-size: cover;
         background-blend-mode: multiply;
         display: grid;
-
+        margin-top: -5vmin;
     }
 
     header {
         font-size: 10vmin;
         margin: 1vmin;
+        margin-bottom: -6vmin;
     }
 
     h1 {
         font-size: 9vmin;
         display: inline;
-        margin-top: -15vmin;      
+        margin-top: -15vmin;
     }
 
     #markers {
@@ -124,7 +125,7 @@ button:hover {
         gap: 1vmin;
         margin-top: -20vmin;
     }
-    
+
     #markers>div {
         height: 8vmin;
         border-width: 6vmin;
@@ -133,7 +134,7 @@ button:hover {
         transform: scale(0.7);
         filter: will-change;
     }
-    
+
     #markers>div:hover {
         transform: scale(0.8);
         transition: transform 142ms ease-in;
@@ -149,7 +150,7 @@ button:hover {
         gap: 1vmin;
         margin-top: -25vmin;
     }
-    
+
     #board>div {
         border-radius: 50%;
         border: 6px double rgba(245, 245, 245, 0.73);
@@ -159,7 +160,7 @@ button:hover {
         font-size: 4vmin;
         height: fit-content;
         /* width: fit-content; */
-        margin-top: 2vmin;
+        margin-top: -10vmin;
         padding: 2vmin;
     }
 
