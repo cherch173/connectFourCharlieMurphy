@@ -98,6 +98,10 @@ button:hover {
         background-size: cover;
     }
 
+    body {
+        height: 100vh;
+    }
+
     header {
         font-size: 12vmin;
     }
