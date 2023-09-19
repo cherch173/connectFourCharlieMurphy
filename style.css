@@ -98,7 +98,7 @@ button:hover {
 
 @media (max-width: 480px) {
     * {
-        height: 100%;
+        display: inline-grid;
     }
 
     body {
@@ -112,13 +112,11 @@ button:hover {
     header {
         font-size: 10vmin;
         margin: 1vmin;
-        margin-bottom: -20vmin;
     }
 
     h1 {
         font-size: 9vmin;
-        margin-top: -20vmin;
-        margin-bottom: -60min;
+        display: inline;      
     }
 
     #markers {
@@ -127,7 +125,6 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 1vmin;
-        margin-top: -70vmin;
     }
     
     #markers>div {
@@ -152,7 +149,6 @@ button:hover {
         grid-template-columns: repeat(7, 12vmin);
         grid-template-rows: repeat(6, 12vmin);
         gap: 1vmin;
-        margin-top: -17vmin;
     }
     
     #board>div {
